@@ -1,9 +1,11 @@
 
-import Mine from '../../icons/Mine';
-import Friends from '../../icons/Friends';
-import Coins from '../../icons/Coins';
-import { binanceLogo, hamsterCoin } from '../../assets/images';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { SiCoinmarketcap } from "react-icons/si";
+import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { PiUsersThreeFill } from "react-icons/pi";
+import { FaGooglePlay } from "react-icons/fa6";
+import { FaUser } from "react-icons/fa";
+import { PiHandWithdrawFill } from "react-icons/pi";
 
 function BottomMenu() {
 
@@ -15,8 +17,15 @@ function BottomMenu() {
                     isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
                 }
             >
-                <img src={binanceLogo} alt="Exchange" className="w-8 h-8 mx-auto" />
-                <p className="mt-1">Home</p>
+                {
+                    ({isActive}) => (
+                        <>
+                            <SiCoinmarketcap className={isActive ? "text-slate-200 w-8 h-8 mx-auto" : "text-slate-500 w-8 h-8 mx-auto"}/>
+                            <p className={isActive ? "text-slate-200 mt-1" : "text-slate-500 mt-1"}>Market</p>
+                        </>
+
+                    )
+                }
             </NavLink>
             <NavLink 
                 to="/earn" 
@@ -24,17 +33,31 @@ function BottomMenu() {
                     isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
                 }
             >
-                <Mine className="w-8 h-8 mx-auto" />
-                <p className="mt-1">Earn</p>
+                {
+                    ({isActive}) => (
+                        <>
+                            <RiMoneyDollarCircleLine className={isActive ? "text-slate-200 w-10 h-8 mx-auto" : "text-slate-500 w-8 h-8 mx-auto"}/>
+                            <p className={isActive ? "text-slate-200 mt-1" : "text-slate-500 mt-1"}>Earn</p>
+                        </>
+
+                    )
+                }
             </NavLink>
             <NavLink 
-                to="/friends" 
+                to="/friend" 
                 className={({ isActive }) =>
                     isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
                 }
             >
-                <Friends className="w-8 h-8 mx-auto" />
-                <p className="mt-1">Friends</p>
+                {
+                    ({isActive}) => (
+                        <>
+                            <PiUsersThreeFill className={isActive ? "text-slate-200 w-8 h-8 mx-auto" : "text-slate-500 w-8 h-8 mx-auto"}/>
+                            <p className={isActive ? "text-slate-200 mt-1" : "text-slate-500 mt-1"}>Friends</p>
+                        </>
+
+                    )
+                }
             </NavLink>
             <NavLink 
                 to="/play" 
@@ -42,17 +65,47 @@ function BottomMenu() {
                     isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
                 }
             >
-                <Coins className="w-8 h-8 mx-auto" />
-                <p className="mt-1">Play</p>
+                {
+                    ({isActive}) => (
+                        <>
+                            <FaGooglePlay className={isActive ? "text-slate-200 w-8 h-8 mx-auto" : "text-slate-500 w-8 h-8 mx-auto"}/>
+                            <p className={isActive ? "text-slate-200 mt-1" : "text-slate-500 mt-1"}>Play</p>
+                        </>
+
+                    )
+                }
+            </NavLink>
+            <NavLink 
+                to="/pay-out" 
+                className={({ isActive }) =>
+                    isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
+                }
+            >
+                {
+                    ({isActive}) => (
+                        <>
+                            <PiHandWithdrawFill className={isActive ? "text-slate-200 w-8 h-8 mx-auto" : "text-slate-500 w-8 h-8 mx-auto"}/>
+                            <p className={isActive ? "text-slate-200 mt-1" : "text-slate-500 mt-1"}>Pay Out</p>
+                        </>
+
+                    )
+                }
             </NavLink>
             <NavLink 
                 to="/user" 
                 className={({ isActive }) =>
                     isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
-                }
+            }
             >
-                <img src={hamsterCoin} alt="Airdrop" className="w-8 h-8 mx-auto" />
-                <p className="mt-1">User</p>
+                {
+                    ({isActive}) => (
+                        <>
+                            <FaUser className={isActive ? "text-slate-200 w-8 h-8 mx-auto" : "text-slate-500 w-8 h-8 mx-auto"}/>
+                            <p className={isActive ? "text-slate-200 mt-1" : "text-slate-500 mt-1"}>User</p>
+                        </>
+    
+                    )
+                }
             </NavLink>
         </div>
   )

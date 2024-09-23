@@ -1,19 +1,18 @@
-import hamsterExchange from "./hamster-exchange.png";
-import binanceLogo from "./binance-logo.png";
-import dollarCoin from "./dollar-coin.png";
-import dailyReward from "./daily-reward.png";
-import dailyCipher from "./daily-cipher.png";
-import dailyCombo from "./daily-combo.png";
-import mainCharacter from "./main-character.png";
-import hamsterCoin from "./hamster-coin.png";
-
+import mptIcon from "./mpt.jpeg";
+import ooredooIcon from "./ooredoo.jpeg";
+import myTelIcon from "./mytel.jpeg";
+import atomIcon from "./atom.jpeg";
+import mlbbIcon from "./mlbb.jpeg";
+import kbzPayIcon from "./kbzpay.png";
+import ayaPayIcon from "./ayapay.jpeg";
+import wavePayIcon from "./wavepay.png";
 export {
-    hamsterExchange,
-    binanceLogo,
-    dollarCoin,
-    dailyReward,
-    dailyCipher,
-    dailyCombo,
-    mainCharacter,
-    hamsterCoin
+    mptIcon,
+    ooredooIcon,
+    myTelIcon,
+    atomIcon,
+    mlbbIcon,
+    kbzPayIcon,
+    ayaPayIcon,
+    wavePayIcon
 };
