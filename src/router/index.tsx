@@ -4,9 +4,9 @@ import User from '../screens/User/User';
 import ErrorPage from '../screens/ErrorPage/ErrorPage';
 import Earn from '../screens/Earn/Earn';
 import Friend from '../screens/Friend/Friend';
-import Play from '../screens/Play/Play';
 import PayOut from '../screens/PayOut/PayOut';
-
+import PlayDetail from '../screens/PlayDetail/PlayDetail';
+import Play from '../screens/Play/Play';
 
 const routes: any = createBrowserRouter([
   {
@@ -27,6 +27,11 @@ const routes: any = createBrowserRouter([
   {
     path: "/play",
     element: <Play/>,
+    errorElement: <ErrorPage/>
+  },
+  {
+    path: "/play-detail",
+    element: <PlayDetail/>,
     errorElement: <ErrorPage/>
   },
   {

@@ -30,7 +30,7 @@ function BottomMenu() {
             <NavLink 
                 to="/earn" 
                 className={({ isActive }) =>
-                    isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
+                    isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5 p-2"
                 }
             >
                 {
