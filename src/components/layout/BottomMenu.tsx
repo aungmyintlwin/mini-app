@@ -14,7 +14,7 @@ function BottomMenu() {
             <NavLink 
                 to="/" 
                 className={({ isActive }) =>
-                    isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
+                    isActive ? "text-center text-[#85827d] w-1/6 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/6"
                 }
             >
                 {
@@ -30,7 +30,7 @@ function BottomMenu() {
             <NavLink 
                 to="/earn" 
                 className={({ isActive }) =>
-                    isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5 p-2"
+                    isActive ? "text-center text-[#85827d] w-1/6 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/6 p-2"
                 }
             >
                 {
@@ -46,7 +46,7 @@ function BottomMenu() {
             <NavLink 
                 to="/friend" 
                 className={({ isActive }) =>
-                    isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
+                    isActive ? "text-center text-[#85827d] w-1/6 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/6"
                 }
             >
                 {
@@ -62,7 +62,7 @@ function BottomMenu() {
             <NavLink 
                 to="/play" 
                 className={({ isActive }) =>
-                    isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
+                    isActive ? "text-center text-[#85827d] w-1/6 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/6"
                 }
             >
                 {
@@ -78,7 +78,7 @@ function BottomMenu() {
             <NavLink 
                 to="/pay-out" 
                 className={({ isActive }) =>
-                    isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
+                    isActive ? "text-center text-[#85827d] w-1/6 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/6"
                 }
             >
                 {
@@ -94,7 +94,7 @@ function BottomMenu() {
             <NavLink 
                 to="/user" 
                 className={({ isActive }) =>
-                    isActive ? "text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/5"
+                    isActive ? "text-center text-[#85827d] w-1/6 bg-[#1c1f24] m-1 p-2 rounded-2xl" : "text-center text-[#85827d] w-1/6"
             }
             >
                 {
